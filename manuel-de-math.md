@@ -1,6 +1,9 @@
 
 # Cours de mathématique 
 
+[![hackmd-github-sync-badge](https://hackmd.io/XVhDcOKcQkWvZ-7k7TTAOQ/badge)](https://hackmd.io/XVhDcOKcQkWvZ-7k7TTAOQ)
+
+
 ## Auteurs et contributeurs 
 
 * Lila Galland
@@ -69,7 +72,7 @@ Themes
   * $\cos(x)-\cos(y)= 2 \sin{\frac{x+y}{2}}\sin{\frac{x-y}{2}}$
   * $\sin(x)\cos(y)=\frac{1}{2}\left(\sin(x+y) + \sin(x-y) \right)$
   * $\cos(x)\cos(y)=\frac{1}{2}\left(\cos(x+y) + \cos(x-y) \right)$
-  * $\sin(x)\sin(y)=\frac{1}{2}\left(\cos(x-y) + \cos(x+y) \right)$ (à vérifier NPX)
+  * $\sin(x)\sin(y)=\frac{1}{2}\left(\cos(x-y) - \cos(x+y) \right)$
   
   
 # Table des matières
@@ -136,18 +139,31 @@ Themes
  
 ## Premier degré
 
-###   Fonction constante $y = f(x) = b$
+###   Fonction constante $y \equiv f(x) = b$
 
 ###   Représentation graphique de la fonction du premier degré et de la fonction constante
 
 ###   Rôle des paramètres $m$ et $p$ dans l'équation $y = mx+p$
   * $m$ est la pente de la droite $d$ dont l'équation est $y=mx + p$. On l'appelle aussi le coefficient angulaire de la droite $d$.
+  * $p$ est l'ordonné à l'origine de la droite. En effet, en x=0 l'équation de la droite devient $y=m\cdot 0+p$, soit $y=p$ qui correspond donc bien à l'ordonné à l'origine.
 
 ###   Caractéristiques de la fonction du premier (zéro, signe, croissance-décroissance)
 
 ###   Inéquation du premier degré 
 
 ###   Intersection de deux fonctions du premier degré et/ou constantes
+Pour calculer une intersection de deux fonctions du premier degré, il suffit d'égaliser les deux fonctions en question et résoudre en x. 
+
+Exemple:
+
+$f(x)= 6x+3$ et $g(x)=2x-1$; l'intersection entre $f$ et $g$ s'écrit comme $f(x)=g(x)$
+
+Résolvons:
+$f(x)=g(x)$
+$\iff 6x+3 = 2x-1$ $\iff4x=-4$ $\iff x=-1$
+Nous savons dès à présent où se trouve l'intersection (ici en x=-1). Pour finir, injectons ce x trouvé dans $f$ ou $g$, cela n'a pas d'importance puisqu'ils auront la même valeur en y en leur intersection. En effet,
+$f(-1)=g(-1)=-3$. L'intersection se trouve donc au point $(-1,-3)$.
+
  
  ## Outils algébriques
 
@@ -155,7 +171,11 @@ Themes
 
 ###   Équations impossible et indéterminée
 
-###   Règle du produit nul ( $a*b=0 <=> a = 0 \vee b=0$)
+###   Règle du produit nul
+
+Cette règle est très souvent utilisée, notamment dans les résolutions d'équations du second degré (et +).
+
+$a\cdot b=0 \Leftrightarrow a = 0 \vee b=0$
 
 ###   Équation produit
 
@@ -301,10 +321,24 @@ $\alpha = \frac{-b}{2a}$ et $\beta=\frac{-\Delta}{2a}$
 
 ###   Équation cartésienne d’un cercle 
 $(x-a)^2 + (y-b)^2 = r^2$
- $x = x_c + r \cos(\theta)$
- $y = y_c + r \sin(\theta)$
+
+ $x = x_c + r \cos(\theta)$ et  $y = y_c + r \sin(\theta)$
 
 # Matière de $5^e$
+
+## Statistique à deux variables
+
+## Suites
+
+## Asymptotes, limites et continuité
+
+## Dérivée
+
+## Fonctions trigonométriques
+
+## Géométrie vectorielle du plan et de  l’espace
+
+## Géométrique analytique et synthétique de  l’espace
 
 # Matière de $6^e$
 
@@ -312,11 +346,24 @@ $(x-a)^2 + (y-b)^2 = r^2$
 
 ## Fonctions exponentielles
 
-Définitions : la fonction exponentielle est celle
-
+### Définitions
+La fonction exponentielle est celle
   *  dont la dérivée est proportionnelle à elle-même $f'(x) = \frac{d}{dx} f(x) =  k f(x)$ où $k \in \mathbb{R}$
   *  qui transforme une somme en produit : $f(a+b) = f(a) f(b)$
-  
+  *  qui est définie par $f:\mathbb{R} \rightarrow \mathbb{R}: x \rightarrow a^x$ où $a \ne 1 \wedge a>0$
+### Propriétés
+* $e^{x+y}=e^xe^y$
+* Le rayon de convergeance de la fonction $e^x$ vaut $\infty$
+* $\text{dom}\ f = \mathbb{R}$  et  $\text{Im}\ f = \mathbb{R_0^+}$ ($f(x)>0$ ,  $\forall x\in\mathbb{R}$)
+* Continue, soit $\forall \tilde{x}\in\mathbb{R},\lim_{x\to\tilde{x}, x<\tilde{x}} x =\lim_{x\to\tilde{x}, x>\tilde{x}} x$
+* Partout dérivable
+* Strictement croissante si $a>1$ et strictement décroissante si $0<a<1$
+* $G_f\ni (0,1), \forall a\in\mathbb{R}$
+* $a^x$ grimpe le plus vite que n'importe quel polynôme si $a>1$
+* ... ?
+
+### Représentation graphique
+
 ## Fonctions logarithmes
 
 Définitions : la fonction logarithme est celle
@@ -324,8 +371,21 @@ Définitions : la fonction logarithme est celle
   *  dont la dérivée est inversément à son argument $f'(x) = \frac{d}{dx} f(x) =  k \frac{1}{x}$ où $k \in \mathbb{R}$
   *  qui transforme un produit en somme : $f(ab) = f(a) + f(b)$
   
+## Intégrales et primitives
 
-# Compléments
+## Nombres complexes
+
+## Fonctions réciproques 
+
+## Fonctions cyclométriques
+
+## Lieux géométriques
+
+## Probabilité
+
+## Lois de probabilités
+
+# Compléments - PES (préparation aux études supérieures)
 
 ## Éléments de logique
 
@@ -352,7 +412,7 @@ L'opérateur $\veebar$ est également appelé « ou exclusif ».
 
 #### Définition
 
-Une *proposition* est une *affirmation* qui est soit vraie}, soit fausse.
+Une *proposition* est une *affirmation* qui est soit vraie, soit fausse.
 
 ##### Exemples
 
@@ -369,7 +429,7 @@ En logique propositionnelle (comme en arithmétique,  en algèbre, etc.), on rai
 
 ### Opérateurs logiques
 
-Soient $p$ et $q$ deux propositions quelconques. On peut  les connecter. La  *valeur de vérité* de la  *formule* ainsi  obtenue est exprimée par une  *table de vérité}. Le symbole  $V$ vaut pour  *vrai*, tandis que $F$ vaut pour  *faux*.
+Soient $p$ et $q$ deux propositions quelconques. On peut  les connecter. La  *valeur de vérité* de la  *formule* ainsi  obtenue est exprimée par une  *table de vérité*. Le symbole  $V$ vaut pour  *vrai*, tandis que $F$ vaut pour  *faux*.
 
 #### Négation
 
@@ -503,3 +563,5 @@ Dans ce cours, les règles de priorités adoptées pour les opérateurs logiques
 ###### Exemple
 
 On peut construire la formule $(p \veebar q) \vee (\neg p \vee \neg q)$ en  connectant les propositions $p$ et $q$.
+
+
