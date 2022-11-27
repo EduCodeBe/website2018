@@ -49,16 +49,14 @@ Themes
 
  | $\alpha$ en rad (°)      | 0 | $\pi/6$ (30)   | $\pi/4$ (45) | $\pi/3$ (60)     | $\pi/2$ (90) |
  |----------------|----|-------|--------------|--------------|-----|
- | $\sin(\alpha)$ | 0  | $1/2$ | $\sqrt{2}/2$ | $\sqrt{3}/2$ | 1   |
- | $\cos(\alpha)$ | 1  |  $\sqrt{3}/2$ | $\sqrt{2}/2$ |$1/2$ | 0   |
- | $\tan(\alpha)$ | 0  |  $\sqrt{3}/3$ | $1$ | $\sqrt{3}$ | $\infty$   |
+ | $\sin(\alpha)$ | $0$  | $1/2$ | $\sqrt{2}/2$ | $\sqrt{3}/2$ | $1$   |
+ | $\cos(\alpha)$ | $1$  |  $\sqrt{3}/2$ | $\sqrt{2}/2$ |$1/2$ | $0$   |
+ | $\tan(\alpha)$ | $0$ |  $\sqrt{3}/3$ | $1$ | $\sqrt{3}$ | $\nexists$   |
+ | $\cot(\alpha)$ | $\nexists$ |  $\sqrt{3}$ | $1$ | $\sqrt{3}/3$ | $0$   |
  
-  * $\cos(a+b)=\cos(a)\cos(b)-\sin(a)\sin(b)$
-  * $\cos(a-b)=\cos(a)\cos(b)+\sin(a)\sin(b)$
-  * $\sin(a+b)=\sin(a)\cos(b)+\sin(b)\cos(a)$
-  * $\sin(a-b)=\sin(a)\cos(b)-\sin(b)\cos(a)$
-  * $\tan(a+b)=\frac{\tan(a)+\tan(b)}{1-\tan(a)\tan(b)}$
-  * $\tan(a-b)=\frac{\tan(a)-\tan(b)}{1+\tan(a)\tan(b)}$
+  * $\cos(a\pm b)=\cos(a)\cos(b)\mp\sin(a)\sin(b)$
+  * $\sin(a\pm b)=\sin(a)\cos(b)\pm\sin(b)\cos(a)$
+  * $\tan(a\pm b)=\dfrac{\tan(a)\pm\tan(b)}{1\mp\tan(a)\tan(b)}$
   * $\cos(2a) = \cos^2(a)-\sin^2(a) =  2 \cos^2(a)- 1 = 1- 2 \sin^2(a)$ 
   * $\sin(2a)= 2 \sin(a)\cos(a)$
   * $\tan(2a)=\frac{2\tan(a)}{1-\tan^2(a)}$
@@ -66,8 +64,7 @@ Themes
   * $\sin^2(a)=\frac{1-\cos(2a)}{2}$
   * $\cos(a)=\frac{1-\tan^2(a/2)}{1+\tan^2(a/2)}$
   * $\sin(a)=\frac{2\tan(a/2)}{1+\tan^2(a/2)}$
-  * $\sin(x)+\sin(y)= 2 \sin{\frac{x+y}{2}}\cos{\frac{x-y}{2}}$
-  * $\sin(x)-\sin(y)= 2 \sin{\frac{x-y}{2}}\cos{\frac{x+y}{2}}$
+  * $\sin(x)\pm\sin(y)= 2 \sin{\frac{x\pm y}{2}}\cos{\frac{x\mp y}{2}}$
   * $\cos(x)+\cos(y)= 2 \cos{\frac{x+y}{2}}\cos{\frac{x-y}{2}}$
   * $\cos(x)-\cos(y)= 2 \sin{\frac{x+y}{2}}\sin{\frac{x-y}{2}}$
   * $\sin(x)\cos(y)=\frac{1}{2}\left(\sin(x+y) + \sin(x-y) \right)$
@@ -330,9 +327,407 @@ $(x-a)^2 + (y-b)^2 = r^2$
 
 ## Suites
 
-## Asymptotes, limites et continuité
+## Limites, asymptotes et continuité
+
+### Limites
+
+### Quelques limites particulières
+
+#### Sin(x)/x quand x tend vers 0
+
+$$ \lim_{x \to 0} \dfrac{\sin(x)}{x} = 1$$
+
+##### Démonstration
+
+Géométriquement, dans le cercle trigonométrique, prenons un petit angle positif $x$. Il délimite sur le cercle les points $P, Q, R$ et $T$ qui représente la tangente de $x$.
+
+#### 
+
+### Continuité
+
+### Asymptotes
 
 ## Dérivée
+
+### Introduction 
+
+La dérivée est très importante car permet de comprendre comment change une fonction, donc un phénomène. On s’en sert très souvent au cours de mathématique dans les études de fonction.
+
+L’avantage c’est qu’il n’y a pratiquement que des formules à apprendre, et une fois que tu les connais, c’est extrêmement simple !! 
+
+### La dérivée, qu’est-ce-que c’est ?
+
+Quand on a une fonction $f$ assez régulière, on peut calculer une autre fonction que l’on note $f'$ (prononcée « f prime ») et qu’on appelle la dérivée de $f$. 
+
+Nous verrons plus tard l’utilité de $f'$.
+
+L’objectif est tout d’abord de savoir comment calculer cette dérivée $f'$ à partir de la fonction $f$.
+
+Par définition, la dérivée par rapport à $x$ de $f(x)$ est écrite $f'(x)$ et vaut $$ f'(x) := \lim_{h \to 0} \dfrac{f(x+h)-f(x)}{h} = \lim_{\Delta x \to 0} \dfrac{f(x+\Delta x)-f(x)}{\Delta x} = \lim_{x_1 \to x} \dfrac{f(x_1)-f(x)}{x_1 - x} $$
+
+
+Notez qu'il existe une autre notation pour la dérivée de $f$, à savoir $$f'(x)=\frac{\mathrm{d}f}{\mathrm{d}x}(x)$$
+
+### Formules de dérivées
+
+Le tableau à 2 colonnes suivant contient à gauche la fonction $f$ et sa dérivée $f'$ à droite.
+
+Ce tableau est à connaître par coeur dès le début ce tableau. Avec l’habitude et beaucoup d’exercices, ça semblera logique et évident.
+
+#### Tableau des dérivées 
+
+| $f$  |  $f‘$ |
+|------|-------|
+|constante| 	0|
+|$x$ | 	1|
+|$x^2$| $2x$|
+|$x^3$| $3x^2$|
+|$x^n$ | $n \times x^{n-1}$|
+|$\frac{1}{x} = x^{-1}$|$-\frac{1}{x^2} = -x^{-2}$|
+|$\sqrt{x}$|$\frac{1}{2\sqrt{x}}$|
+|$\sin(x)$|$\cos(x)$|
+|$\cos(x)$|$-\sin(x)$|
+|$\tan(x)$|$\dfrac{1}{\cos^2(x)}$|
+
+
+Dans le tableau, ce qu’on appelle constante, c’est un réel, qui ne dépend pas de $x$, comme $27, ⅔, 36,7$ ou $\pi$.
+
+Prenons un exemple :
+
+Si $f(x) = x^2$, alors d’après la formule du tableau, on a $f'(x) = 2x$, tout simplement !
+
+La seule formule qui peut poser problème est celle de $x^n$.
+
+En fait c’est la formule valable pour toutes les puissances de $x$ : $x^5$, $x^9$, $x^{965}$, et même les puissances négatives comme $x^{-5}$ ou $x^{-12}$. Pour les valeurs entières de $n$ (autrement dit $n\in\mathbb{Z}$), ceci est valable pour tout $x$ réel ($x\in\mathbb{R}$).
+
+Si le domaine de la fonction est restreint aux réels positifs ($x\in\mathbb{R^+}$), alors la formule est aussi valable pour toute valeur réelle de $n$. Les valeurs rationnelles de $n$ ($x\in\mathbb{Q}$) correspondent à des puissances de racines. En effet, pour tout rationnel $n$, on peut l'écrire $n=\frac{p}{q}$ où $p, q \in\mathbb{N}$, et $x^n=x^\frac{p}{q} = \sqrt[q]{x^p}$.
+
+Voici une vidéo sur les dérivées de base et une astuce pour retenir cette formule, ainsi que la démonstration de 2 formules du tableau à partir de celle de $x^n$.
+
+### Somme de fonctions et constantes multiplicatives
+
+Et si on a une somme de fonctions ? C’est facile, on dérive les uns après les autres.
+
+**La dérivée d'une somme est la somme des dérivées.**
+
+Exemple : $f(x) = x^5 - x^2 + 12$
+
+La dérivée de $x^5$ est $5x^4$, la dérivée de $x^2$ est $2x$, la dérivée de $12$ est $0$ car $12$ est une constante. On a alors :
+
+$f'(x) = 5x^4 - 2x + 0$
+
+C’est très simple, on dérive tranquillement chaque terme, il faut juste faire attention à mettre le bon signe à chaque fois ($+$ ou $-$).
+
+Et les constantes multiplicatives ?
+
+Ce qu’on appelle constante multiplicative, ce sont les réels qui sont facteurs des puissances de $x$.
+
+Par exemple dans $f(x) = 7x^9 - 8x^3 + 5$, le $7$ et le $8$ sont des constantes multiplicatives, car elles sont des facteurs de  $x$, tandis que le 5 est une constante tout court, il n’y a pas de $x$ avec lui.
+
+Alors comment fait-on ?
+
+Là aussi c’est très simple, dans la dérivée, on conserve la constante multiplicative et on dérive tranquillement le reste.
+
+Exemple : $f(x) = 9x^5$. La dérivée de $x^5$ est $5x^4$, on a donc
+$f'(x) = 9\times 5x^4$ et $f'(x) = 45x^4$. On copie le $9$ et on a ensuite dérivé le terme $x^5$. Evidemment après on calcule $9\times5$, on ne laisse surtout pas le $9 \times 5x^4$ comme ça.
+
+Bien sûr on peut avoir des sommes de fonctions avec des constantes multiplicatives : $f(x) = 7x^9 - 8x^3 + 5$
+
+Et tout naturellement, on dérive chaque terme en recopiant le constante multiplicative à chaque fois : 
+
+$f'(x) = 7\times 9x^8 - 8\times 3x^2 + 0 = f'(x) = 63x^8 - 24x^2$
+
+Il n’y a aucune difficulté à ce niveau-là, tout semble très logique.
+
+#### Produits et quotients de fonctions
+
+Par contre quand on a des produits ou des quotients de fonctions, ça devient un peu différent.
+
+Soit les 2 fonctions $u$ et $v$, les formules sont alors les suivantes :
+$(u\times v)'= u' \times v + u \times v'$ ou plus simplement, 
+$(u v)'= u'  v + u v'$ . Et $\dfrac{u}{v} = \dfrac{u'v-uv'}{v^2}$.
+
+Prenons $f(x) = (2x + 1) \times (x^2 - 9)$
+
+On a bien $u \times v$ avec $u = 2x + 1$ et $v = x^2 – 9$. 
+
+Il est alors recommandé d’écrire u, v, u’ et v’ de la manière suivante :
+
+$u = 2x + 1$ et $u’ = 2$
+
+$v = x2 – 9$ et $v’ = 2x$
+
+Il ne reste plus alors qu’à appliquer la formule en remplaçant $u$, $v$, $u’$ et $v’$.
+
+$f'(x) = u'v + uv' = (2) \times (x^2 - 9) + (2x + 1) \times (2x)$ ou
+$f'(x) = 2x^2 - 18 + 4x^2 + 2x$ ou encore, $f'(x) = 6x^2 + 2x - 18$
+
+Il n’y a aucune difficulté du moment que l'on connaît et peut appliquer  la formule !
+
+L’intérêt d’écrire $u, u’, v$ et $v’$ sous la forme d’un petit tableau comme au-dessus permet d’avoir les différentes parties regroupées.
+Ainsi, après avoir écrit la formule $u’v + uv’$, ce sera beaucoup plus facile lors du remplacement.
+
+Pour se souvenir de la formule, voici un moyen simple : dites-vous « je dérive le 1er et je laisse le 2ème (ce qui te donne $u’v$), puis je fais l’inverse, je laisse le 1er et jé dérive le 2ème (ce qui donne $uv’$) ».
+
+**ATTENTION**: Il ne faut surtout pas dire que $(u × v)’ = u’ × v’$.
+En gros il ne faut pas dériver bêtement chaque terme, il faut bien appliquer la formule.
+
+Pour les quotients c’est exactement la même chose, on applique la formule après avoir fait le petit tableau. Soit à dériver $\dfrac{5x+1}{x^6+5x-2}$.
+
+On écrit
+
+$u = 5x + 1$ et $u’ = 5$
+
+$v = x^6 + 5x – 2$ et $v’ = 6x^5 + 5$
+
+Et on applique la formule $\dfrac{u}{v} = \dfrac{u'v-uv'}{v^2}$.
+
+Et là il faut retenir quelque chose de très important : **on ne développe jamais le dénominateur.**
+
+La raison principale c’est : à quoi ça sert de développer ?? a
+En effet, rien ne va se simplifier… au numérateur en revanche, on va avoir des termes qui vont se simplifier :
+
+Une fois de plus, une fois que tu connais les formules, il n’y a aucun souci !!
+
+Evidemment un peu d’entraînement avec ces exercices sur les dérivées de produits et de quotients ne feront pas de mal a
+
+
+
+Les dérivées de fonctions composées
+
+Haut de page
+
+Déjà, une fonction composée, c’est quoi ?
+Et bien ce sont tout simplement 2 fonctions qui sont regroupées ensemble !
+
+Exemple : au lieu d’avoir
+
+g(x) = \sqrt{x}
+on a
+
+f(x) = \sqrt{8x^2 - 5x + 4}
+
+Cette 2ème fonction est une fonction composée, puisqu’il y a 2 fonctions « imbriquées », à savoir :
+
+\sqrt{x} \, et \, 8x^2 - 5x + 4
+
+Deux autres exemples : au lieu d’avoir
+
+g(x) =\frac{1}{x}
+on a
+
+f(x) =\frac{1}{8x^6 + 4x^7 - 6x}
+
+et au lieu d’avoir
+
+g(x) = x^2
+on a
+
+f(x) = (5x^9 - 2x + 6)^2
+
+Généralement, la fonction « à l’intérieur » de l’autre (dans le 1er exemple, 8x2 – 5x + 4, dans le 2ème exemple 8x6 +4x7 – 6x, dans le 3ème exemple 5x9 – 2x + 6) est notée u.
+Ainsi, la formule générale des fonctions composées est entre autres :
+
+u^2
+
+\sqrt{u}
+
+\frac{1}{u}
+etc…
+
+Pour dériver ce type de fonctions, c’est extrêmement simple !!
+
+On dérive comme si c’était un x et non un u, et on multiplie toujours par u’ !!
+Regardons ce que cela donne dans le tableau :
+Tableau des dérivées composées f 	f ‘
+u^2 	2u \times u'
+u^3 	3u^2 \times u'
+u^n 	n \times u^{n-1} \times u'
+\frac{1}{u} 	-\frac{1}{u^2} \times u'
+\sqrt{u} 	\frac{1}{2\sqrt{u}} \times u'
+sin(u) 	cos(u) \times u'
+cos(u) 	-sin(u) \times u'
+
+Comme tu le vois c’est EXACTEMENT le même tableau que précédemment mais on a remplacé x par u, et on a multiplié à chaque fois la dérivée par u’.
+
+Evidemment quelques exemples s’imposent, ici nous ferons directement les exemples en vidéo, mais il y en a plein pour que tu puisses t’entraîner beaucoup a
+
+Application principale : variations d’une fonction
+
+Haut de page
+
+Bon la dérivée c’est bien jolie mais à quoi ça sert ??
+
+Et bien c’est très simple :
+
+—
+Si f ‘ ≥ 0, alors f est croissante
+Si f ‘ ≤ 0, alors f est décroissante
+—
+
+Un exemple tout simple :
+
+f(x) = x^2 - 6x + 4
+
+On cherche à faire le tableau de variation de f.
+Pour cela, on calcule d’abord f ‘ :
+
+f'(x) = 2x - 6
+
+Le but est de savoir le SIGNE de f ‘.
+f’ est de la forme ax + b, il suffit donc de savoir quand f ‘ s’annule car on sait construire le tableau de signe d’une fonction de type ax + b.
+2x – 6 = 0
+2x = 6
+x = 3
+
+On peut alors faire le tableau de SIGNE de f’ :
+
+En effet, cela correspond au tableau de signe d’une fonction ax + b avec a > 0
+
+Et maintenant on applique la propriété qu’on a vu juste au-dessus : si f ‘ ≤ 0, la fonction est décroissante, sinon elle est croissante !
+
+—
+ATTENTION !!
+Il faut bien voir qu’on fait le tableau de SIGNE de f ‘, mais le tableau de VARIATIONS de f, il ne faut pas mélanger les 2 !!!
+—
+
+Evidemment, si f ‘ change plusieurs fois de signe, f change plusieurs fois de sens de variation. On peut donc imaginer le tableau suivant :
+
+Il y a une chose que tu dois retenir : quand tu fais le signe de f ‘, il faut factoriser au maximum f ‘ !!
+En effet, quand on fait le tableau de signe d’une fonction, il faut toujours la factoriser…
+
+Dans ces exercices sur les variations d’une fonction tu verras en détail comment on fait le tableau de variations à partir de la dérivée a
+
+
+
+Lien avec la limite et dérivabilité
+
+Haut de page
+
+La dérivabilité, c’est le fait qu’une fonction soit dérivable ou non sur un certain intervalle. Pour cela, on va utiliser les limites.
+Normalement tu as du voir les limites au chapitre précédent.
+Si ce n’est pas le cas, regarde d’abord ce chapitre sur les limites, sinon tu ne vas pas comprendre grand chose^^
+
+Le lien entre limite et dérivée est très simple : si on a un point d’abscisse a, on a la relation suivante :
+
+Il y a une autre formule équivalente mais qui est moins pratique à utiliser, nous te la donnons juste à titre indicatif pour que tu saches ce que c’est au cas où tu la rencontres :
+
+Bon ok, et ça sert à quoi cette formule ??
+Cette formule sert justement à savoir si une fonction est dérivable en un point ou non.
+
+—
+En effet, la fonction f est dérivable en a SI
+
+avec k REEL !!
+—
+
+Autrement dit il faut que la limite existe et que cette limite soit finie.
+On rappelle que +∞ et -∞ ce n’est pas fini, donc si on obtient ce résultat, ce ne sera pas dérivable…
+
+Attention : la limite ci-dessus n’existe pas forcément, si elle n’existe pas la fonction ne sera pas dérivable en a…
+
+Mais si la limite existe et qu’elle est finie, on peut poser :
+
+f'(a) = k
+
+Avec un petit exemple ce sera plus simple :
+Prenons la fonction racine :
+
+f(x) = \sqrt{x}
+
+On cherche à savoir si cette fonction est dérivable en a = 0 ou non.
+On calcule alors :
+
+car f(0) = √0 = 0
+
+On multiplie alors en haut et en bas par √x pour pouvoir simplifier :
+
+La limite vaut donc +∞, donc la limite n’est pas finie !!
+Donc la fonction racine n’est pas dérivable en 0.
+
+Cette partie peut peut-être te sembler un peu dure, mais rassure-toi, ce n’est pas ce qu’il faut retenir en priorité, loin de là !!
+D’ailleurs on fait rarement ce genre de calculs, il est beaucoup plus important de savoir calculer la dérivée d’une fonction comme on l’a fait auparavant.
+
+Mais tu peux toujours t’entraîner avec ces exercices sur la dérivabilité d’une fonction, on y trouve notamment une propriété intéressante à connaître, démontrée avec ce qu’on vient de voir.
+
+
+
+Equation de la tangente
+
+Haut de page
+
+Cette histoire de limite et de dérivabilité n’est sûrement pas ce que tu vas utiliser le plus dans ta scolarité.
+En revanche, il y a une autre application plus importante de la dérivée : l’équation de la tangente !
+
+Déjà une tangente à une fonction qu’est-ce-que c’est ?
+C’est une droite, elle est donc de la forme y = ax + b
+Ensuite, cette droite « longe » la courbe de la fonction sans la traverser… bon avec un schéma ce sera plus simple :
+
+Et si on fait un gros zoom, la tangente ne coupe la courbe qu’en un seul point :
+
+Bien sûr si on dézoome, il est possible que la tangente recoupe la courbe mais ce sera assez loin et ça ne nous intéresse pas.
+
+La tangente que tu connais peut-être déjà c’est la tangente à un cercle, qui est perpendiculaire au rayon :
+
+
+Les 3 droites sont tangentes au cercle (et donc perpendiculaires à un rayon)
+
+Il y a évidemment une infinité de tangentes, en fait il y en a en tout point où la fonction est dérivable.
+Pourquoi ?
+Et bien tout simplement parce que dans la formule de l’équation de la tangente, il y a la dérivée !
+
+L’équation de la tangente AU POINT D’ABSCISSE « a » est la suivante :
+
+Cette formule est à apprendre PAR COEUR !!!
+
+Néanmoins nous allons te l’expliquer un peu.
+En fait, la dérivée de f en a, c’est-à-dire f ‘(a), a une signification graphique :
+
+—
+f ‘(a) est le coefficient directeur de la tangente au point d’abscisse a
+—
+
+Or on a vu que la tangente était une droite, et comme son coefficient directeur est f ‘(a), son équation est de la forme :
+
+y = f'(a)x + b
+
+Par ailleurs, quand x = a, y = f(a) puisque la tangente coupe la courbe en a !
+On a donc en remplaçant x par a et y par f(a) :
+
+f(a) = f'(a)\times a + b
+donc
+
+b = f(a) - f'(a)\times a
+
+Et donc en remplaçant le b dans l’équation ci-dessus, on a :
+
+y = f'(a)x + f(a) - f'(a)\times a
+ce qui donne
+
+y = f'(a)(x-a) + f(a)
+
+Et voilà, on a retrouvé l’équation de la formule !! a
+
+—
+Attention à ne pas confondre f(a) et f ‘(a) !!
+Pour ne pas inverser, dis-toi que le f ‘(a) est avec le x puisque f ‘(a) est le coefficient directeur.
+Utilise cela pour te souvenir facilement de la formule.
+—
+
+Dernière chose à noter : si on te demande de donner l’équation d’une tangente en a, il faut donc connaître f ‘(a) et f(a) pour remplacer dans la formule.
+Il est alors conseillé de calculer séparemment f ‘, puis f ‘(a) et f(a) également séparemment au lieu d’écrire directement la formule, sinon il y a trop de chose à calculer d’un coup et il y a alors plus de chances que tu fasses des erreurs a
+
+Avec ces quelques exemples sur les tangentes, tu verras la méthode complète pour calculer une équation de tangente.
+
+Intérêt de la dérivée
+
+La dérivée est fondamentale car on la retrouve presque tout le temps avec les fonctions !!
+
+Comme on l’a vu, elle permet de connaître l’équation de la tangente, de pouvoir calculer quelques limites de formes indéterminées, et surtout de connaître le sens de variation d’une fonction !!
+C’est pour cette dernière application qu’elle est la plus utilisée.
+
+La dérivée est également utile dans les équations différentielles, que l’on voit en Terminale, qui sont des équations reliant une fonction et sa dérivée.
+L’intérêt est que de nombreux phénomènes physiques sont régis par des équations différentielles, et il faut donc savoir les résoudre pour pouvoir étudier les grandeurs mises en jeu.
 
 ## Fonctions trigonométriques
 
@@ -359,7 +754,7 @@ La fonction exponentielle est celle
 * Partout dérivable
 * Strictement croissante si $a>1$ et strictement décroissante si $0<a<1$
 * $G_f\ni (0,1), \forall a\in\mathbb{R}$
-* $a^x$ grimpe le plus vite que n'importe quel polynôme si $a>1$
+* $a^x$ grimpe plus vite que n'importe quel polynôme si $a>1$
 * ... ?
 
 ### Représentation graphique
