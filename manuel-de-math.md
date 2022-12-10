@@ -6,8 +6,11 @@
 
 ## Auteurs et contributeurs 
 
-* Lila Galland
-* [Nicolas Pettiaux](mailto:nicolas@pettiaux.be) ( [CV](https://nicolas.pettiaux.be) )
+* [Nicolas Pettiaux](mailto:manueldemath@pettiaux.be) ( [CV](https://nicolas.pettiaux.be) ) @npettiaux 
+* les élèves de 5e math-sciences et latin-math de l'[Athénée Robert Catteau](https://robertcatteau.be)
+    * @IlyassAchour
+    * et encore plusieurs
+* Lila Galland qui a prêté ses notes de cours
 
 
 Ce document collaboratif est sous licence CC-BY-SA, la licence utilisée aussi par [Wikipedia](https://fr.wikipedia.org).
@@ -33,17 +36,6 @@ Themes
 ###### tags: `Book`
 
 # Formulaire (à connaître par cœur)
-## Dérivées 
-  * $(ax)' = a$ avec $a,b \in \mathbb{R}$ et $f,g$ des fonctions
-  * $(ax+b)' = a$
-  * $(f+g)' = f' + g'$
-  * $(fg)' = f'g + fg'$
-  * $\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$
-  * $(x^a)' = a x^{a-1}$
-  * $\left[g(f(x))\right]'= g'(f(x)) \cdot f'(x)$
-  * $\sin(x)'=\cos(x)$
-  * $\cos(x)'=-\sin(x)$
-  * $\tan(x)'=\frac{1}{\cos^2(x)}=1+\tan^2(x)$
 
 ## Trigonométrie
 
@@ -59,19 +51,70 @@ Themes
   * $\tan(a\pm b)=\dfrac{\tan(a)\pm\tan(b)}{1\mp\tan(a)\tan(b)}$
   * $\cos(2a) = \cos^2(a)-\sin^2(a) =  2 \cos^2(a)- 1 = 1- 2 \sin^2(a)$ 
   * $\sin(2a)= 2 \sin(a)\cos(a)$
-  * $\tan(2a)=\frac{2\tan(a)}{1-\tan^2(a)}$
-  * $\cos^2(a)=\frac{1+\cos(2a)}{2}$
-  * $\sin^2(a)=\frac{1-\cos(2a)}{2}$
-  * $\cos(a)=\frac{1-\tan^2(a/2)}{1+\tan^2(a/2)}$
-  * $\sin(a)=\frac{2\tan(a/2)}{1+\tan^2(a/2)}$
-  * $\sin(x)\pm\sin(y)= 2 \sin{\frac{x\pm y}{2}}\cos{\frac{x\mp y}{2}}$
-  * $\cos(x)+\cos(y)= 2 \cos{\frac{x+y}{2}}\cos{\frac{x-y}{2}}$
-  * $\cos(x)-\cos(y)= 2 \sin{\frac{x+y}{2}}\sin{\frac{x-y}{2}}$
+  * $\tan(2a)=\dfrac{2\tan(a)}{1-\tan^2(a)}$
+  * $\cos^2(a)=\dfrac{1+\cos(2a)}{2}$
+  * $\sin^2(a)=\dfrac{1-\cos(2a)}{2}$
+  * $\cos(a)=\dfrac{1-\tan^2(a/2)}{1+\tan^2(a/2)}$
+  * $\sin(a)=\dfrac{2\tan(a/2)}{1+\tan^2(a/2)}$
+  * $\sin(x)\pm\sin(y)= 2 \sin{\dfrac{x\pm y}{2}}\cos{\dfrac{x\mp y}{2}}$
+  * $\cos(x)+\cos(y)= 2 \cos{\dfrac{x+y}{2}}\cos{\dfrac{x-y}{2}}$
+  * $\cos(x)-\cos(y)= 2 \sin{\dfrac{x+y}{2}}\sin{\dfrac{x-y}{2}}$
   * $\sin(x)\cos(y)=\frac{1}{2}\left(\sin(x+y) + \sin(x-y) \right)$
   * $\cos(x)\cos(y)=\frac{1}{2}\left(\cos(x+y) + \cos(x-y) \right)$
   * $\sin(x)\sin(y)=\frac{1}{2}\left(\cos(x-y) - \cos(x+y) \right)$
   
   
+## Dérivées 
+  * $(a \cdot x)' = a$ avec $a,b \in \mathbb{R}$ et $f,g$ des fonctions
+  * $(ax+b)' = a$
+  * $(f+g)' = f' + g'$
+  * $(fg)' = f'g + fg'$
+  * $\left(\dfrac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$
+  * $(x^a)' = a x^{a-1}$
+  * $\left[g(f(x))\right]'= g'(f(x)) \cdot f'(x)$
+  * $\sin(x)'=\cos(x)$
+  * $\cos(x)'=-\sin(x)$
+  * $\tan(x)'=\dfrac{1}{\cos^2(x)}=1+\tan^2(x)$
+  * $(a^x)'$=$\ln(a)$ $\cdot$ $(a^x)$
+
+#### Tableau des dérivées 
+
+| $f(x)$  |  $f'(x)$ |
+|------|-------|
+|constante| 	0|
+|$x$ | 	1|
+|$x^2$| $2x$|
+|$x^3$| $3x^2$|
+|$x^n$ | $n \cdot x^{n-1}$|
+|$\frac{1}{x} = x^{-1}$|$-\dfrac{1}{x^2} = -x^{-2}$|
+|$\sqrt{x}=x^{1/2}$|$\dfrac{1}{2\sqrt{x}}=\dfrac{1}{2}x^{-1/2}$|
+|$\sin(x)$|$\cos(x)$|
+|$\cos(x)$|$-\sin(x)$|
+|$\tan(x)$|$\dfrac{1}{\cos^2(x)}$|
+
+Et à partir de la $6^e$, il faudra aussi connaître les formules suivantes 
+
+| $f(x)$  |  $f'(x)$ |
+|------|-------|
+|$e^x$|$e^x$|
+|$a^x$|$\ln(a) \cdot a^x$|
+|$\ln(x)$|$\dfrac{1}{x}$|
+|$\log_a(x)$|$\dfrac{1}{\ln(a)} \cdot \frac{1}{x}$|
+##   Tableau des dérivées composées $f,u,v$ :
+| $f(x)$  |  $f'(x)$ |
+|------|-------|
+| $a \cdot u$ | $a \cdot u'$|
+|$u^2$ |$2 \, u \times u'$
+|$u^3$ 	|$3 \, u^2 \times u'$|
+|$u^n$ 	|$n\cdot u^{n-1} \times u'$|
+|$\dfrac{1}{u}$ |	$-\dfrac{1}{u^2} \times u'$
+|$\sqrt{u}$ 	|$\dfrac{1}{2\sqrt{u}} \times u'$|
+|$\sin(u)$ |	$\cos(u) \times u'$|
+|$\cos(u)$ |	$-\sin(u) \times u'$|
+|$\tan(u)$ |	$\dfrac{1}{\cos^2(u)} \times u'$|
+|$u(v(x)) = u(v)$ |    $u'(v(x)) \cdot v'(x) = u'(v) \cdot v'$| 
+
+
 # Table des matières
 
 # Contenus des cours des années 3 et 4
@@ -376,18 +419,28 @@ Ce tableau est à connaître par coeur dès le début ce tableau. Avec l’habit
 
 #### Tableau des dérivées 
 
-| $f$  |  $f‘$ |
+| $f(x)$  |  $f'(x)$ |
 |------|-------|
 |constante| 	0|
 |$x$ | 	1|
 |$x^2$| $2x$|
 |$x^3$| $3x^2$|
-|$x^n$ | $n \times x^{n-1}$|
-|$\frac{1}{x} = x^{-1}$|$-\frac{1}{x^2} = -x^{-2}$|
-|$\sqrt{x}$|$\frac{1}{2\sqrt{x}}$|
+|$x^n$ | $n \cdot x^{n-1}$|
+|$\frac{1}{x} = x^{-1}$|$-\dfrac{1}{x^2} = -x^{-2}$|
+|$\sqrt{x}=x^{1/2}$|$\dfrac{1}{2\sqrt{x}}=\dfrac{1}{2}x^{-1/2}$|
 |$\sin(x)$|$\cos(x)$|
 |$\cos(x)$|$-\sin(x)$|
 |$\tan(x)$|$\dfrac{1}{\cos^2(x)}$|
+
+Et à partir de la $6^e$, il faudra aussi connaître les formules suivantes 
+
+| $f(x)$  |  $f'(x)$ |
+|------|-------|
+|$e^x$|$e^x$|
+|$a^x$|$\ln(a) \cdot a^x$|
+|$\ln(x)$|$\dfrac{1}{x}$|
+|$\log_a(x)$|$\dfrac{1}{\ln(a)} \cdot \frac{1}{x}$|
+
 
 
 Dans le tableau, ce qu’on appelle constante, c’est un réel, qui ne dépend pas de $x$, comme $27, ⅔, 36,7$ ou $\pi$.
@@ -409,6 +462,15 @@ Voici une vidéo sur les dérivées de base et une astuce pour retenir cette for
 Et si on a une somme de fonctions ? C’est facile, on dérive les uns après les autres.
 
 **La dérivée d'une somme est la somme des dérivées.**
+
+#### Démonstration de la dérivée d'une somme de fonctions
+
+Soit $f,g$, 2 fonctions dérivables sur l'intervalle $I = \left[ a,b \right]$. Démontrons que $(f+g)' = f'+g'$
+
+##### Démonstration 
+
+Par définition de la dérivée, la dérivée par rapport à $x$ de $(f+g)(x)$  $$ (f+g)'(x) := \lim_{h \to 0} \dfrac{(f+g)(x+h)-(f+g)(x)}{h} = \lim_{\Delta x \to 0} \dfrac{f(x+\Delta x)-f(x)}{\Delta x} = \lim_{x_1 \to x} \dfrac{f(x_1)-f(x)}{x_1 - x} $$
+
 
 Exemple : $f(x) = x^5 - x^2 + 12$
 
@@ -484,131 +546,102 @@ Et on applique la formule $\dfrac{u}{v} = \dfrac{u'v-uv'}{v^2}$.
 
 Et là il faut retenir quelque chose de très important : **on ne développe jamais le dénominateur.**
 
-La raison principale c’est : à quoi ça sert de développer ?? a
-En effet, rien ne va se simplifier… au numérateur en revanche, on va avoir des termes qui vont se simplifier :
+La raison principale c’est : à quoi ça sert de développer ? 
+En effet, rien ne va se simplifier… 
 
-Une fois de plus, une fois que tu connais les formules, il n’y a aucun souci !!
+Au numérateur en revanche, on va avoir des termes qui vont se simplifier.
+Une fois de plus, une fois que les formules connues, il n’y a aucun souci.
 
-Evidemment un peu d’entraînement avec ces exercices sur les dérivées de produits et de quotients ne feront pas de mal a
+Évidemment un peu d’entraînement avec ces exercices sur les dérivées de produits et de quotients ne feront pas de mal.
 
+**Les dérivées de fonctions composées**
 
+Déjà, une fonction composée, c’est quoi ? Et bien ce sont tout simplement 2 fonctions qui sont regroupées ensemble.
 
-Les dérivées de fonctions composées
+Exemple : au lieu d’avoir seulement $g(x)$ = $\sqrt{x}$ on a
+$f(x)$ = $\sqrt{8x^2 - 5x + 4}$
 
-Haut de page
+Cette $2^e$ fonction est une fonction composée, puisqu’il y a 2 fonctions « imbriquées », à savoir : $\sqrt{x}$ \, et $\, 8x^2 - 5x + 4$
 
-Déjà, une fonction composée, c’est quoi ?
-Et bien ce sont tout simplement 2 fonctions qui sont regroupées ensemble !
-
-Exemple : au lieu d’avoir
-
-g(x) = \sqrt{x}
-on a
-
-f(x) = \sqrt{8x^2 - 5x + 4}
-
-Cette 2ème fonction est une fonction composée, puisqu’il y a 2 fonctions « imbriquées », à savoir :
-
-\sqrt{x} \, et \, 8x^2 - 5x + 4
-
-Deux autres exemples : au lieu d’avoir
-
-g(x) =\frac{1}{x}
-on a
-
-f(x) =\frac{1}{8x^6 + 4x^7 - 6x}
-
+Deux autres exemples : au lieu d’avoir $g(x)$ =$\frac{1}{x}$
+on a $f(x)$ =$\frac{1}{8x^6 + 4x^7 - 6x}$
 et au lieu d’avoir
+$g(x)$ = $x^2$, on a
+$f(x)$ = $(5x^9 - 2x + 6)^2$
 
-g(x) = x^2
-on a
+Généralement, la fonction « à l’intérieur » de l’autre (dans le 1er exemple, $8x^2 – 5x + 4$, dans le $2^e$ exemple $8x^6 +4x^7 – 6x$, dans le $3^e$ exemple $5x^9 – 2x + 6$ est notée $u$.
 
-f(x) = (5x^9 - 2x + 6)^2
-
-Généralement, la fonction « à l’intérieur » de l’autre (dans le 1er exemple, 8x2 – 5x + 4, dans le 2ème exemple 8x6 +4x7 – 6x, dans le 3ème exemple 5x9 – 2x + 6) est notée u.
 Ainsi, la formule générale des fonctions composées est entre autres :
+$u^2$, $\sqrt{u}$, $\frac{1}{u}$ etc…
 
-u^2
+Pour dériver ce type de fonctions, c’est extrêmement simple. 
 
-\sqrt{u}
+On dérive comme si c’était un $x$ et non un $u$, et on multiplie toujours par $u’$.
 
-\frac{1}{u}
-etc…
-
-Pour dériver ce type de fonctions, c’est extrêmement simple !!
-
-On dérive comme si c’était un x et non un u, et on multiplie toujours par u’ !!
 Regardons ce que cela donne dans le tableau :
-Tableau des dérivées composées f 	f ‘
-u^2 	2u \times u'
-u^3 	3u^2 \times u'
-u^n 	n \times u^{n-1} \times u'
-\frac{1}{u} 	-\frac{1}{u^2} \times u'
-\sqrt{u} 	\frac{1}{2\sqrt{u}} \times u'
-sin(u) 	cos(u) \times u'
-cos(u) 	-sin(u) \times u'
 
-Comme tu le vois c’est EXACTEMENT le même tableau que précédemment mais on a remplacé x par u, et on a multiplié à chaque fois la dérivée par u’.
 
-Evidemment quelques exemples s’imposent, ici nous ferons directement les exemples en vidéo, mais il y en a plein pour que tu puisses t’entraîner beaucoup a
+  Tableau des dérivées composées $f,u,v$ :
+| $f(x)$  |  $f'(x)$ |
+|------|-------|
+| $a \cdot u$ | $a \cdot u'$|
+|$u^2$ |$2 \, u \times u'$
+|$u^3$ 	|$3 \, u^2 \times u'$|
+|$u^n$ 	|$n\cdot u^{n-1} \times u'$|
+|$\dfrac{1}{u}$ |	$-\dfrac{1}{u^2} \times u'$
+|$\sqrt{u}$ 	|$\dfrac{1}{2\sqrt{u}} \times u'$|
+|$\sin(u)$ |	$\cos(u) \times u'$|
+|$\cos(u)$ |	$-\sin(u) \times u'$|
+|$\tan(u)$ |	$\dfrac{1}{\cos^2(u)} \times u'$|
+|$u(v(x)) = u(v)$ |    $u'(v(x)) \cdot v'(x) = u'(v) \cdot v'$| 
 
-Application principale : variations d’une fonction
 
-Haut de page
+C’est **exactement** le même tableau que précédemment mais on a remplacé $x$ par $u$, et on a multiplié à chaque fois la dérivée par $u’$.
 
-Bon la dérivée c’est bien jolie mais à quoi ça sert ??
+## Application principale : variations d’une fonction
+
+
+Bon la dérivée c’est bien joli mais à quoi ça sert dans le cours de mathématique ?
 
 Et bien c’est très simple :
 
-—
-Si f ‘ ≥ 0, alors f est croissante
-Si f ‘ ≤ 0, alors f est décroissante
-—
+Si $f' ≥ 0$, alors $f$ est croissante et si $f' ≤ 0$, alors $f$ est décroissante.
 
-Un exemple tout simple :
+Un exemple tout simple : soit la fonction $f(x) = x^2 - 6x + 4$
 
-f(x) = x^2 - 6x + 4
+On cherche à faire le tableau de variation de $f$.
 
-On cherche à faire le tableau de variation de f.
-Pour cela, on calcule d’abord f ‘ :
+Pour cela, on calcule d’abord $f'$ : $f'(x) = 2x - 6$
 
-f'(x) = 2x - 6
+Le but est de savoir le **signe** de $f'$. Ici, $f’$ est de la forme $ax + b$, il suffit donc de savoir quand $f'$ s’annule car on sait construire le tableau de signe d’une fonction de type $ax + b$.
 
-Le but est de savoir le SIGNE de f ‘.
-f’ est de la forme ax + b, il suffit donc de savoir quand f ‘ s’annule car on sait construire le tableau de signe d’une fonction de type ax + b.
-2x – 6 = 0
-2x = 6
-x = 3
+On calcule $ 2x – 6 = 0$ ou $ 2x = 6$ ou $ x = 3$. 
 
-On peut alors faire le tableau de SIGNE de f’ :
+On peut alors faire le *tableau de signe* de $f’$:
 
-En effet, cela correspond au tableau de signe d’une fonction ax + b avec a > 0
-
-Et maintenant on applique la propriété qu’on a vu juste au-dessus : si f ‘ ≤ 0, la fonction est décroissante, sinon elle est croissante !
-
-—
-ATTENTION !!
-Il faut bien voir qu’on fait le tableau de SIGNE de f ‘, mais le tableau de VARIATIONS de f, il ne faut pas mélanger les 2 !!!
-—
-
-Evidemment, si f ‘ change plusieurs fois de signe, f change plusieurs fois de sens de variation. On peut donc imaginer le tableau suivant :
-
-Il y a une chose que tu dois retenir : quand tu fais le signe de f ‘, il faut factoriser au maximum f ‘ !!
-En effet, quand on fait le tableau de signe d’une fonction, il faut toujours la factoriser…
-
-Dans ces exercices sur les variations d’une fonction tu verras en détail comment on fait le tableau de variations à partir de la dérivée a
+| $x$ | $- \infty$ | 3 | $\infty$ |
+|---|------------|---|----------|
+|$f'(x)$| $-$ | $0$ | $+$ |
 
 
+En effet, cela correspond au tableau de signe d’une fonction $ax + b$ avec $a > 0$.
 
-Lien avec la limite et dérivabilité
+Et maintenant on applique la propriété qu’on a vu juste au-dessus : si $f' ≤ 0$, la fonction est décroissante, sinon elle est croissante !
 
-Haut de page
+Il faut bien voir qu’on fait le *tableau de **signes*** de $f'$, mais le *tableau de **variations*** de $f$, il ne faut pas mélanger les 2.
 
-La dérivabilité, c’est le fait qu’une fonction soit dérivable ou non sur un certain intervalle. Pour cela, on va utiliser les limites.
-Normalement tu as du voir les limites au chapitre précédent.
-Si ce n’est pas le cas, regarde d’abord ce chapitre sur les limites, sinon tu ne vas pas comprendre grand chose^^
+Évidemment, si $f'$ change plusieurs fois de signe, $f$ change plusieurs fois de sens de variation. On peut donc imaginer le tableau suivant :
 
-Le lien entre limite et dérivée est très simple : si on a un point d’abscisse a, on a la relation suivante :
+Il y a une chose qu'il faut retenir : pour faire un tableau de signe de $f'$, il faut factoriser au maximum $f'$.
+
+En effet, quand on fait le tableau de signe d’une fonction, il faut toujours la factoriser …
+
+### Lien avec la limite et dérivabilité
+(pas vu encore en 5 LM-MS au 6 décembre 2022)
+
+La dérivabilité, c’est le fait qu’une fonction soit dérivable ou non sur un certain intervalle. Pour cela, on utilise les limites vues au chapitre précédent.
+
+Le lien entre limite et dérivée est simple : si on a un point d’abscisse $a$, on a la relation suivante :
 
 Il y a une autre formule équivalente mais qui est moins pratique à utiliser, nous te la donnons juste à titre indicatif pour que tu saches ce que c’est au cas où tu la rencontres :
 
@@ -651,17 +684,19 @@ D’ailleurs on fait rarement ce genre de calculs, il est beaucoup plus importan
 Mais tu peux toujours t’entraîner avec ces exercices sur la dérivabilité d’une fonction, on y trouve notamment une propriété intéressante à connaître, démontrée avec ce qu’on vient de voir.
 
 
+## Équation de la tangente
 
-Equation de la tangente
+Cette histoire de limite et de dérivabilité n’est sûrement pas ce qui est le plus utilisé le plus dans les cours.
 
-Haut de page
+En revanche, il y a une autre application plus importante de la dérivée : **l’équation de la tangente** !
 
-Cette histoire de limite et de dérivabilité n’est sûrement pas ce que tu vas utiliser le plus dans ta scolarité.
-En revanche, il y a une autre application plus importante de la dérivée : l’équation de la tangente !
+Une tangente à une fonction qu’est-ce-que c’est ?
 
-Déjà une tangente à une fonction qu’est-ce-que c’est ?
-C’est une droite, elle est donc de la forme y = ax + b
+C’est une droite, elle est donc de la forme $y = ax + b$
+
 Ensuite, cette droite « longe » la courbe de la fonction sans la traverser… bon avec un schéma ce sera plus simple :
+
+*** IMAGE À RAJOUTER ***
 
 Et si on fait un gros zoom, la tangente ne coupe la courbe qu’en un seul point :
 
